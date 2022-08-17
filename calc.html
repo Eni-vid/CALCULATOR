@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+    
+</head>
+<body>
+
+    <form name="calc" class="calculator">
+        <table>
+            <thead class="output">
+                <input id="results" name="screen" type="text" placeholder="0">
+            </thead>
+            <tbody class="operation">
+                <tr id="first-line">
+                    <td> <input class="btn" type="button" value="off" onclick="display('off')" /></td>
+                    <td><input class="btn" type="button" value="on" onclick="display('on')" /></td>
+                    <td><input data-bracket class="btn" type="button" value="(" onclick="number(value)" /></td>
+                    <td><input data-bracket2 class="btn" type="button" value=")" onclick="number(value)" /></td>
+                    <td><input class="btn" type="button" value="*10" onclick="display('*10')" /></td>
+                </tr>
+                <tr id="second-line">
+                    <td><input class="btn" type="button" value="sin" onclick="sin()" /></td>
+                    <td><input class="btn" type="button" value="cos" onclick="cos()" /></td>
+                    <td><input class="btn" type="button" value="tan" onclick="tan()" /></td>
+                    <td><input class="btn" type="button" value="log" onclick="log()" /></td>
+                    <td><input class="btn" type="button" value="%" onclick="number(value)" /></td>
+                    
+                </tr>
+                
+                <tr id="third-line">
+                   <td><input data-number class="btn" type="button" value="7" onclick="number(value)" /></td>
+                   <td><input data-number class="btn" type="button" value="8" onclick="number(value)" /></td>
+                   <td><input data-number class="btn" type="button" value="9" onclick="number(value)" /></td>
+                   <td><input data-delete class="btn" type="button" value="del" onclick="display('del')" /></td>
+                   <td><input data-allclear class="btn" type="button" value="ac" onclick="display('ac')" /></td>
+                   
+                </tr>
+                <tr id="fourth-line">
+                    <td><input data-number class="btn" type="button" value="4" onclick="number(value)" /></td>
+                    <td><input data-number class="btn" type="button" value="5" onclick="number(value)" /></td>
+                    <td><input data-number class="btn" type="button" value="6" onclick="number(value)" /></td>
+                    <td><input data_operator class="btn" type="button" value="x" onclick="number(value)" /></td>
+                    <td><input data-operator class="btn" type="button" value="/" onclick="number(value)" /></td>
+                    
+                 </tr>
+                <tr id="fifth-line">
+                    <td><input data-number class="btn" type="button" value="1" onclick="number(value)" /></td>
+                    <td><input data-number class="btn" type="button" value="2" onclick="number(value)" /></td>
+                    <td><input data-number class="btn" type="button" value="3" onclick="number(value)" /></td>
+                    <td><input data_operator class="btn" type="button" value="+" onclick="number(value)" /></td>
+                    <td><input data_operator class="btn" type="button" value="-" onclick="number(value)" /></td>
+                   
+                </tr>
+                <tr id="sixth-line">
+                    <td><input data-number class="btn" type="button" value="0" onclick="number(value)" /></td>
+                    <td><input data-number class="btn" type="button" value="." onclick="display('.')" /></td>
+                    <td><input data-eng class="btn" type="button" value="eng" onclick="display('eng')" /></td>
+                    
+                    <td colspan="2"><input data-equals class="btn" type="button" value="=" onclick="equal()" /></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <script src="calc.js"></script>
+</body>
+</html>
